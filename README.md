@@ -56,3 +56,6 @@
     "scripts": {
       "commit": "git-cz"
     }
+
+---
+Feito com ❤️ por [@brhcastro](https://linkedin.com/in/brhcastro).
