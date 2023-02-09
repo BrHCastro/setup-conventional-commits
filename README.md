@@ -28,13 +28,11 @@
     ```
   Adicionando hook:
   ```sh
-    npx husky add .husky/commit-msg
-
-    # adicinar os commandos abaixo no arquivo .husky/commit-msg
-      #!/bin/sh
-      . "$(dirname "$0")/_/husky.sh"
-
-      npx commitlint --edit $1
+    # Add hook
+    npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
+    
+    # To automatically have Git hooks enabled after install, edit package.json
+    npm pkg set scripts.prepare="husky install"
   ```
 - ### [Commitizen](https://github.com/commitizen/cz-cli)
   Instalação:
